@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>TapX AI — цифровые продукты: боты, AI-ассистенты, сайты</title>
+  <meta name="description" content="TapX AI — личная лаборатория Артёма: Telegram-боты, AI-ассистенты, сайты и Mini Apps. Реальные проекты, честные статусы и процесс создания.">
+  <meta name="theme-color" content="#050807">
+  <meta name="color-scheme" content="dark">
+  <link rel="canonical" href="https://tapx-ai.netlify.app/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="TapX AI">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="TapX AI — цифровые продукты из идей, кода и AI">
+  <meta property="og:description" content="Telegram-боты, AI-ассистенты, сайты и Mini Apps. Личная лаборатория Артёма — без команды и выдуманных кейсов.">
+  <meta property="og:image" content="https://tapx-ai.netlify.app/assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://tapx-ai.netlify.app/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="TapX AI — цифровые продукты из идей, кода и AI">
+  <meta name="twitter:description" content="Telegram-боты, AI-ассистенты, сайты и Mini Apps. Личная лаборатория Артёма.">
+  <meta name="twitter:image" content="https://tapx-ai.netlify.app/assets/img/og-image.jpg">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
+
+  <link rel="preload" href="assets/fonts/golos-text-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-arrow-down" viewBox="0 0 24 24"><path d="M12 4v16m-6-6 6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5-11-6.5Z" fill="currentColor"/></symbol>
+    <symbol id="i-telegram" viewBox="0 0 24 24"><path d="M21.2 4.3 2.9 11.4c-.8.3-.8 1.4.1 1.6l4.6 1.3 1.8 5.6c.2.7 1.1.8 1.5.2l2.6-3.1 4.8 3.5c.6.4 1.4.1 1.6-.6l3-14.6c.2-.9-.7-1.6-1.7-1.2Zm-2.8 3.3-8 7.2-.4 3.2-1.3-4.1 9.7-6.3Z" fill="currentColor"/></symbol>
+    <symbol id="i-youtube" viewBox="0 0 24 24"><path d="M21.6 7.2c-.2-.9-.9-1.6-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4c-.9.2-1.6.9-1.8 1.8C2 8.8 2 12 2 12s0 3.2.4 4.8c.2.9.9 1.6 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4c.9-.2 1.6-.9 1.8-1.8.4-1.6.4-4.8.4-4.8s0-3.2-.4-4.8ZM10 15.5v-7l6 3.5-6 3.5Z" fill="currentColor"/></symbol>
+    <symbol id="i-tiktok" viewBox="0 0 24 24"><path d="M16.6 3c.4 2 1.7 3.4 3.9 3.6v2.7c-1.4 0-2.7-.4-3.9-1.2v5.6c0 3.8-2.2 6.3-5.6 6.3-3.1 0-5.4-2.1-5.4-5.1 0-3.1 2.4-5.4 5.6-5.2v2.8c-.4-.1-.8-.1-1.2-.1-1.5 0-2.5 1-2.5 2.4 0 1.5 1 2.5 2.4 2.5 1.6 0 2.6-1.1 2.6-3V3h3.1Z" fill="currentColor"/></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="m4 10 8-6 8 6v9a1 1 0 0 1-1 1h-4v-6H9v6H5a1 1 0 0 1-1-1v-9Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><path d="M4 4h6v6H4V4Zm10 0h6v6h-6V4ZM4 14h6v6H4v-6Zm10 0h6v6h-6v-6Z" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.4" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M5 20c.6-3.4 3.1-5.2 7-5.2s6.4 1.8 7 5.2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3.5" y="5.5" width="17" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="m4.5 7 7.5 6 7.5-6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2.8c.4 5.2 3.9 8.7 9.1 9.1-5.2.4-8.7 3.9-9.1 9.1-.4-5.2-3.9-8.7-9.1-9.1 5.2-.4 8.7-3.9 9.1-9.1Z" fill="currentColor"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 5 6v5.5c0 4.3 2.9 7.7 7 9.5 4.1-1.8 7-5.2 7-9.5V6l-7-3Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+  </svg>
+
+  <div class="sky" aria-hidden="true">
+    <picture class="sky__picture">
+      <source media="(max-width: 760px)" srcset="assets/img/sky-mobile.webp" width="900" height="1350">
+      <img src="assets/img/sky-desktop.webp" alt="" width="1920" height="1200" fetchpriority="high">
+    </picture>
+    <div class="aurora" aria-hidden="true">
+      <span class="aurora__blob aurora__blob--a"></span>
+      <span class="aurora__blob aurora__blob--b"></span>
+      <span class="aurora__blob aurora__blob--c"></span>
+    </div>
+    <canvas class="sky__stars" id="stars"></canvas>
+    <div class="sky__grain"></div>
+    <div class="sky__vignette"></div>
+  </div>
+
+  <div class="rail" aria-hidden="true">
+    <span class="rail__line"></span>
+    <span class="rail__dot" id="rail-dot"></span>
+    <span class="rail__label">TAPX / 001</span>
+  </div>
+
+  <a class="skip" href="#projects">Перейти к проектам</a>
+
+  <header class="head" id="top">
+    <div class="head__inner">
+      <a class="brand" href="#home">
+        <span class="brand__mark" aria-hidden="true">
+          <span class="brand__bar"></span><span class="brand__bar"></span>
+        </span>
+        <span class="brand__text"><strong>TAPX AI</strong><small>Cosmic Digital Lab</small></span>
+        <span class="sr-only">— на главную</span>
+      </a>
+      <nav class="head__nav" aria-label="Основные разделы">
+        <a href="#projects" data-nav="projects"><span>01</span>Проекты</a>
+        <a href="#about" data-nav="about"><span>02</span>Обо мне</a>
+        <a href="#contact" data-nav="contact"><span>03</span>Контакты</a>
+      </nav>
+      <a class="head__cta" href="https://t.me/TapX_AI_support" target="_blank" rel="noopener noreferrer">
+        <span class="head__cta-dot" aria-hidden="true"></span>
+        <span>Telegram</span>
+        <svg class="icon" aria-hidden="true"><use href="#i-arrow"></use></svg>
+      </a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero__inner">
+        <div class="hero__copy">
+          <p class="hero__kicker">
+            <span class="dot dot--live" aria-hidden="true"></span>
+            <span>TAPX AI — личная лаборатория</span>
+            <span class="hero__kicker-line" aria-hidden="true"></span>
+            <span class="hero__kicker-lab">Cosmic Digital Lab</span>
+          </p>
+
+          <h1 class="hero__title" id="hero-title">
+            <span class="line"><span class="line__inner">Собираю</span></span>
+            <span class="line"><span class="line__inner chrome-text">цифровые</span></span>
+            <span class="line"><span class="line__inner">продукты<svg class="hero__spark" aria-hidden="true"><use href="#i-star"></use></svg></span></span>
+          </h1>
+
+          <p class="hero__tag"><em>из идей, кода и AI.</em></p>
+          <p class="hero__lead">Telegram-боты, AI-ассистенты, сайты и Mini Apps. Показываю, что уже работает, и что пока собирается — без выдуманных клиентов и цифр.</p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary btn--beam" href="#projects" data-magnetic>
+              <span>Смотреть проекты</span>
+              <svg class="icon" aria-hidden="true"><use href="#i-arrow"></use></svg>
+            </a>
+            <a class="btn btn--ghost" href="https://t.me/TapX_AI_support" target="_blank" rel="noopener noreferrer">
+              <span>Написать в Telegram</span>
+              <svg class="icon" aria-hidden="true"><use href="#i-arrow"></use></svg>
+            </a>
+          </div>
+
+          <ul class="hero__meta">
+            <li><b data-project-count>08</b><span>проектов</span></li>
+            <li><b>04</b><span>направления</span></li>
+            <li class="hero__meta-live"><i aria-hidden="true"></i><span>TapX AI в работе</span></li>
+          </ul>
+        </div>
+
+        <div class="hero__scene" id="hero-scene" aria-hidden="true">
+          <span class="scene__glow"></span>
+          <span class="scene__eclipse"></span>
+          <span class="scene__ring scene__ring--a"></span>
+          <span class="scene__ring scene__ring--b"></span>
+          <span class="scene__ring scene__ring--c"></span>
+
+          <svg class="scene__orbit-text" viewBox="0 0 300 300">
+            <defs><path id="orbital-path" d="M150,150 m-118,0 a118,118 0 1,1 236,0 a118,118 0 1,1 -236,0"></path></defs>
+            <text><textPath href="#orbital-path" startOffset="0">COSMIC DIGITAL LAB · TAPX AI · 2026 · </textPath></text>
+          </svg>
+
+          <span class="scene__x" id="scene-x">
+            <span class="scene__x-media"><video id="chrome-video" muted loop playsinline preload="none"></video></span>
+            <span class="scene__x-sheen"></span>
+          </span>
+
+          <span class="scene__star scene__star--a"></span>
+          <span class="scene__star scene__star--b"></span>
+          <span class="scene__star scene__star--c"></span>
+          <span class="scene__star scene__star--d"></span>
+
+          <span class="scene__sticker" data-tgs="fire"></span>
+          <span class="scene__label">X / 001</span>
+        </div>
+      </div>
+
+      <div class="hero__bottom">
+        <a class="scroll" href="#projects">
+          <span class="scroll__line" aria-hidden="true"></span>
+          <span class="scroll__text">Листай вниз</span>
+          <span class="scroll__en">SCROLL</span>
+        </a>
+        <p class="hero__note">Личный проект Артёма. Без команды, агентства и выдуманных кейсов.</p>
+      </div>
+    </section>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <div class="ticker__group">
+          <span>Telegram-боты</span><i>✳</i><span>AI-агенты</span><i>✳</i><span>Сайты</span><i>✳</i><span>Mini Apps</span><i>✳</i><span>Эксперименты</span><i>✳</i><span>Motion</span><i>✳</i><span>UI</span><i>✳</i>
+        </div>
+        <div class="ticker__group">
+          <span>Telegram-боты</span><i>✳</i><span>AI-агенты</span><i>✳</i><span>Сайты</span><i>✳</i><span>Mini Apps</span><i>✳</i><span>Эксперименты</span><i>✳</i><span>Motion</span><i>✳</i><span>UI</span><i>✳</i>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= PROJECTS ================= -->
+    <section class="section section--projects" id="projects" aria-labelledby="projects-title">
+      <div class="wrap">
+        <div class="section__head">
+          <p class="label"><span class="label__num">01</span><span>Selected work</span><span class="label__line"></span><span class="label__end">2026</span></p>
+          <div class="section__head-grid">
+            <h2 class="section__title" id="projects-title">Цифровые <em>объекты</em></h2>
+            <div class="section__intro">
+              <p>Восемь проектов: что уже работает, что в разработке и что осталось экспериментом. Статус не приукрашиваю.</p>
+              <ul class="legend" aria-label="Обозначения статусов">
+                <li><span class="status-dot status-dot--live" aria-hidden="true"></span>Работает</li>
+                <li><span class="status-dot status-dot--dev" aria-hidden="true"></span>В разработке</li>
+                <li><span class="status-dot status-dot--exp" aria-hidden="true"></span>Эксперимент</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects__bar">
+          <div class="filters" id="filters" role="group" aria-label="Фильтр по категории"></div>
+          <p class="projects__count" id="projects-count" aria-live="polite"></p>
+        </div>
+
+        <ul class="projects__grid" id="project-grid"></ul>
+        <p class="projects__empty" id="projects-empty" hidden>В этой категории пока нет проектов.</p>
+
+        <noscript>
+          <div class="noscript">
+            <p><strong>Для интерактивной версии включите JavaScript.</strong> Ниже — короткий список работ.</p>
+            <ol>
+              <li><b>AI-секретарь</b> — работает в Telegram, <a href="https://t.me/TapXAI_secretar_robot">открыть бота</a>.</li>
+              <li><b>LinkCut</b> — в разработке, <a href="https://youtu.be/68YLI1g1_6U">видео о создании</a>.</li>
+              <li><b>Emoji Bot Converter</b> — эксперимент, <a href="https://youtu.be/UKnZAEJQAOk">полная демонстрация</a>.</li>
+              <li><b>Каталог премиум-эмодзи</b> — работает, <a href="https://emoji-tapx.netlify.app/">открыть каталог</a>.</li>
+              <li><b>Бот модерации</b> — в разработке.</li>
+              <li><b>YouTube-превью через Google Flow</b> — эксперимент, <a href="https://youtu.be/txivVJDIskU">видео</a>.</li>
+              <li><b>Motion-графика кодом</b> — эксперимент, <a href="https://t.me/TapX_AI/24">пост с результатом</a>.</li>
+              <li><b>Orbital Globe</b> — эксперимент, <a href="globe/">открыть 3D-глобус</a>.</li>
+            </ol>
+          </div>
+        </noscript>
+
+        <div class="projects__foot">
+          <p>Список будет пополняться. Новое появляется сначала в <a href="https://t.me/TapX_AI" target="_blank" rel="noopener noreferrer">Telegram-канале</a>.</p>
+          <span class="mono">[ 08 / 2026 ]</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="section section--about" id="about" aria-labelledby="about-title">
+      <div class="wrap">
+        <div class="section__head">
+          <p class="label"><span class="label__num">02</span><span>About</span><span class="label__line"></span><span class="label__end">Profile</span></p>
+          <div class="section__head-grid">
+            <h2 class="section__title" id="about-title">Человек за <em>TapX&nbsp;AI</em></h2>
+            <div class="section__intro">
+              <p>Меня зовут Артём. Я не студия и не команда — я один собираю проекты и показываю процесс.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="dossier">
+          <aside class="dossier__side" aria-label="Кратко об авторе">
+            <div class="portrait" aria-hidden="true">
+              <div class="portrait__plate">
+                <span class="portrait__ring"></span>
+                <span class="portrait__letter">А</span>
+                <span class="portrait__grid"></span>
+                <span class="portrait__sticker" data-tgs="cool"></span>
+              </div>
+              <span class="portrait__cap">Артём · создатель TapX AI</span>
+            </div>
+
+            <h3 class="dossier__name">Артём</h3>
+            <p class="dossier__role">Разработка, интерфейсы, AI-эксперименты. Один человек, который доводит идеи до работающих вещей.</p>
+
+            <blockquote class="quote">
+              «TapX AI — из идеи в реальный проект».
+              <cite>Подпись Telegram-канала</cite>
+            </blockquote>
+
+            <ul class="dossier__facts">
+              <li><b>01</b><span>человек</span></li>
+              <li><b data-project-count>08</b><span>проектов</span></li>
+              <li><b>04</b><span>направления</span></li>
+            </ul>
+
+            <div class="dossier__now">
+              <p class="dossier__now-title">Сейчас</p>
+              <ul>
+                <li>Бот модерации — в разработке</li>
+                <li>Эксперименты с Mini Apps и интерфейсами</li>
+                <li>Новые видео и разборы в канале</li>
+              </ul>
+            </div>
+
+            <span class="dossier__sticker" data-tgs="detective"></span>
+          </aside>
+
+          <div class="dossier__main">
+            <section class="panel">
+              <h3 class="panel__label"><span>[</span>Профиль<i aria-hidden="true"></i><span>]</span></h3>
+              <div class="panel__box panel__prose">
+                <p>TapX AI — мой личный проект: я собираю Telegram-ботов, AI-ассистентов, сайты и Mini Apps. Здесь всё, что получилось, и всё, что ещё в работе.</p>
+                <p>Работаю без команды и без агентства: идеи, код, интерфейс и тесты — на мне. Многое делаю прямо со смартфона: Termux для терминала, Acode для правок, Claude Chat и DeepSeek — для кода и разборов.</p>
+                <p>Мне интересно не перечислить технологии, а довести вещь до состояния, когда ей можно пользоваться. Поэтому у каждого проекта на сайте честный статус, а не красивая обёртка.</p>
+              </div>
+            </section>
+
+            <div class="dossier__grid">
+              <section class="panel">
+                <h3 class="panel__label"><span>[</span>Фокус<i aria-hidden="true"></i><span>]</span></h3>
+                <div class="panel__box">
+                  <ul class="chips">
+                    <li>Telegram-боты</li>
+                    <li>AI-ассистенты</li>
+                    <li>Сайты</li>
+                    <li>Telegram Mini Apps</li>
+                    <li>Интерфейсы</li>
+                    <li>Motion</li>
+                    <li>Автоматизация</li>
+                  </ul>
+                </div>
+              </section>
+
+              <section class="panel">
+                <h3 class="panel__label"><span>[</span>Инструменты<i aria-hidden="true"></i><span>]</span></h3>
+                <div class="panel__box">
+                  <ul class="tools">
+                    <li><span>Код</span><b>HTML · CSS · JavaScript</b></li>
+                    <li><span>Платформы</span><b>Telegram Bot API · Netlify</b></li>
+                    <li><span>AI</span><b>Claude Chat · DeepSeek</b></li>
+                    <li><span>Среда</span><b>Termux · Acode · смартфон</b></li>
+                  </ul>
+                </div>
+              </section>
+            </div>
+
+            <section class="panel">
+              <h3 class="panel__label"><span>[</span>Процесс<i aria-hidden="true"></i><span>]</span></h3>
+              <div class="panel__box">
+                <ol class="steps">
+                  <li><b>01</b><span>Идея</span></li>
+                  <li><b>02</b><span>Проектирование</span></li>
+                  <li><b>03</b><span>Код с ИИ</span></li>
+                  <li><b>04</b><span>Тесты</span></li>
+                  <li><b>05</b><span>Публикация</span></li>
+                </ol>
+                <p class="panel__note">Не идеальный конвейер, а рабочий цикл: что-то ломается, что-то переделывается, и это видно в канале.</p>
+              </div>
+            </section>
+
+            <section class="panel">
+              <h3 class="panel__label"><span>[</span>Принципы<i aria-hidden="true"></i><span>]</span></h3>
+              <div class="panel__box">
+                <ul class="principles">
+                  <li><b>01</b><p><strong>Честный статус.</strong> Если проект в разработке или эксперимент — так и написано.</p></li>
+                  <li><b>02</b><p><strong>Сначала работает.</strong> Красота не заменяет работающую вещь, а дополняет её.</p></li>
+                  <li><b>03</b><p><strong>Личный проект.</strong> Никаких выдуманных клиентов, команды и цифр.</p></li>
+                </ul>
+              </div>
+            </section>
+
+            <section class="panel panel--switch">
+              <h3 class="panel__label"><span>[</span>Настройка<i aria-hidden="true"></i><span>]</span></h3>
+              <div class="panel__box panel__switch">
+                <label class="leg-switch">
+                  <input type="checkbox" id="motion-toggle" role="switch" aria-describedby="motion-note">
+                  <span class="leg-switch__track" aria-hidden="true">
+                    <span class="leg-switch__knob"><i></i><i></i></span>
+                  </span>
+                  <span class="leg-switch__text">
+                    <b>Анимации интерфейса</b>
+                    <small id="motion-note">Видео, Lottie-стикеры и наклон карточек. Системную настройку «уменьшить движение» сайт уважает всегда.</small>
+                  </span>
+                </label>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section section--contact" id="contact" aria-labelledby="contact-title">
+      <div class="wrap">
+        <div class="contact">
+          <div class="contact__copy">
+            <p class="label"><span class="label__num">03</span><span>Contact</span><span class="label__line"></span><span class="label__end">Open</span></p>
+            <h2 class="contact__title" id="contact-title">Есть идея?<br><em>Давайте соберём.</em></h2>
+            <p class="contact__lead">Бот, ассистент, сайт или Mini App. Напиши в Telegram — обсудим задачу без брифов и форм.</p>
+            <div class="contact__actions">
+              <a class="btn btn--primary btn--beam" href="https://t.me/TapX_AI_support" target="_blank" rel="noopener noreferrer">
+                <span>Написать в Telegram</span>
+                <svg class="icon" aria-hidden="true"><use href="#i-arrow"></use></svg>
+              </a>
+              <a class="btn btn--ghost" href="https://t.me/TapX_AI" target="_blank" rel="noopener noreferrer">
+                <span>Канал TapX AI</span>
+              </a>
+            </div>
+            <p class="contact__note">Отвечаю лично. Без менеджеров и команды.</p>
+          </div>
+
+          <div class="contact__orb-wrap" aria-hidden="true">
+            <img class="contact__aurora" src="assets/media/aurora-band.webp" alt="" width="1200" height="525" loading="lazy" decoding="async">
+            <span class="contact__orbit contact__orbit--a"></span>
+            <span class="contact__orbit contact__orbit--b"></span>
+            <div class="orb" id="orb">
+              <span class="orb__iris"><img src="assets/media/eye-iris.webp" alt="" width="900" height="900" loading="lazy" decoding="async"></span>
+              <span class="orb__pupil"></span>
+              <span class="orb__highlight"></span>
+              <span class="orb__rim"></span>
+            </div>
+            <span class="contact__sticker" data-tgs="heart"></span>
+            <span class="contact__label">SIGNAL / OPEN</span>
+          </div>
+        </div>
+
+        <div class="contact__links" id="contact-links"></div>
+        <noscript>
+          <div class="contact__links">
+            <a class="contact__link" href="https://t.me/TapX_AI_support"><b>Написать в Telegram</b><span>@TapX_AI_support</span></a>
+            <a class="contact__link" href="https://t.me/TapX_AI"><b>Канал TapX AI</b><span>@TapX_AI</span></a>
+            <a class="contact__link" href="https://www.youtube.com/@TapX_A"><b>YouTube</b><span>@TapX_A</span></a>
+            <a class="contact__link" href="https://www.tiktok.com/@tap_x_ai"><b>TikTok</b><span>@tap_x_ai</span></a>
+          </div>
+        </noscript>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="foot__marquee" aria-hidden="true">
+      <div class="foot__marquee-track">
+        <span data-tgs="wave"></span><span data-tgs="heart"></span><span data-tgs="cool"></span><span data-tgs="sparkle"></span><span data-tgs="thumb"></span><span data-tgs="water"></span>
+        <span data-tgs="wave"></span><span data-tgs="heart"></span><span data-tgs="cool"></span><span data-tgs="sparkle"></span><span data-tgs="thumb"></span><span data-tgs="water"></span>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <div class="foot__top">
+        <a class="brand brand--foot" href="#home">
+          <span class="brand__mark" aria-hidden="true"><span class="brand__bar"></span><span class="brand__bar"></span></span>
+          <span class="brand__text"><strong>TAPX AI</strong><small>Cosmic Digital Lab</small></span>
+          <span class="sr-only">— наверх</span>
+        </a>
+        <nav class="foot__nav" aria-label="Разделы сайта">
+          <a href="#projects">Проекты</a>
+          <a href="#about">Обо мне</a>
+          <a href="#contact">Контакты</a>
+          <a href="globe/">Глобус / 3D</a>
+        </nav>
+        <div class="foot__social">
+          <a href="https://t.me/TapX_AI" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><svg class="icon"><use href="#i-telegram"></use></svg></a>
+          <a href="https://www.youtube.com/@TapX_A" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><svg class="icon"><use href="#i-youtube"></use></svg></a>
+          <a href="https://www.tiktok.com/@tap_x_ai" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><svg class="icon"><use href="#i-tiktok"></use></svg></a>
+        </div>
+      </div>
+
+      <div class="foot__word" aria-hidden="true">TAP<span class="foot__x">X</span> <span>AI</span></div>
+
+      <div class="foot__bottom">
+        <p>© <span id="year">2026</span> TapX AI. Личный проект Артёма.</p>
+        <p class="mono">Собрано вручную + AI · Netlify</p>
+      </div>
+    </div>
+  </footer>
+
+  <nav class="dock" aria-label="Разделы (телефон)">
+    <a href="#home" data-nav="home"><svg class="icon" aria-hidden="true"><use href="#i-home"></use></svg><span>Главная</span></a>
+    <a href="#projects" data-nav="projects"><svg class="icon" aria-hidden="true"><use href="#i-grid"></use></svg><span>Проекты</span></a>
+    <a href="#about" data-nav="about"><svg class="icon" aria-hidden="true"><use href="#i-user"></use></svg><span>Обо мне</span></a>
+    <a href="#contact" data-nav="contact"><svg class="icon" aria-hidden="true"><use href="#i-mail"></use></svg><span>Контакты</span></a>
+  </nav>
+
+  <dialog class="case" id="case-dialog" aria-labelledby="case-title">
+    <div class="case__shell">
+      <div class="case__bar">
+        <span class="case__index" id="case-index">01 / 08</span>
+        <span class="case__bar-note">TAPX AI / CASE</span>
+        <button class="case__close" id="case-close" type="button" aria-label="Закрыть кейс">
+          <svg class="icon" aria-hidden="true"><use href="#i-close"></use></svg>
+        </button>
+      </div>
+      <div class="case__scroll">
+        <div class="case__hero">
+          <div class="case__media" id="case-media"></div>
+          <div class="case__head">
+            <p class="case__cat" id="case-cat"></p>
+            <h2 class="case__title" id="case-title">Кейс проекта</h2>
+            <div class="case__status" id="case-status"></div>
+            <p class="case__meta" id="case-meta"></p>
+            <p class="case__note" id="case-note"></p>
+          </div>
+        </div>
+        <div class="case__body">
+          <div class="case__col">
+            <section class="case__block"><h3>Задача</h3><p id="case-task"></p></section>
+            <section class="case__block"><h3>Что реализовано</h3><ul class="case__list" id="case-features"></ul></section>
+            <section class="case__block" id="case-planned-wrap" hidden><h3>В планах <span>не реализовано</span></h3><ul class="case__list case__list--planned" id="case-planned"></ul></section>
+          </div>
+          <aside class="case__aside" aria-label="Детали кейса">
+            <div class="case__block case__block--tech"><h3>Технологии</h3><ul class="tags" id="case-tech"></ul></div>
+            <div class="case__actions" id="case-actions"></div>
+            <button class="case__next" id="case-next" type="button">
+              <span class="case__next-art" id="case-next-art" aria-hidden="true"></span>
+              <span class="case__next-text">
+                <span class="case__next-label">Следующий кейс</span>
+                <span class="case__next-title" id="case-next-title"></span>
+              </span>
+              <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"></use></svg>
+            </button>
+          </aside>
+        </div>
+        <div class="case__gallery" id="case-gallery" hidden></div>
+      </div>
+    </div>
+  </dialog>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://tapx-ai.netlify.app/#person",
+        "name": "Артём",
+        "url": "https://tapx-ai.netlify.app/",
+        "sameAs": [
+          "https://t.me/TapX_AI",
+          "https://www.youtube.com/@TapX_A",
+          "https://www.tiktok.com/@tap_x_ai"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://tapx-ai.netlify.app/#website",
+        "url": "https://tapx-ai.netlify.app/",
+        "name": "TapX AI — Cosmic Digital Lab",
+        "inLanguage": "ru",
+        "description": "Личная лаборатория Артёма: Telegram-боты, AI-ассистенты, сайты и Mini Apps.",
+        "author": { "@id": "https://tapx-ai.netlify.app/#person" }
+      }
+    ]
+  }
+  </script>
+
+  <script src="js/data/site.js"></script>
+  <script src="js/data/projects.js"></script>
+  <script src="js/starfield.js" defer></script>
+  <script src="js/tilt.js" defer></script>
+  <script src="js/stickers.js" defer></script>
+  <script src="js/app.js" defer></script>
+</body>
+</html>
+
+
+

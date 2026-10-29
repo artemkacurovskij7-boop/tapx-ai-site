@@ -1,0 +1,4 @@
+# Netlify: статический сайт без сборки. Все заголовки — только в _headers.
+[build]
+  publish = "."
+  command = ""

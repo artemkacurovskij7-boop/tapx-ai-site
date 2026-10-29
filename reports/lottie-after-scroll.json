@@ -1,0 +1,9 @@
+{
+  "lottie": [
+    "http://127.0.0.1:8013/js/vendor/lottie_light.min.js"
+  ],
+  "tgs": 1,
+  "live": 1,
+  "playing": 1,
+  "visible": 1
+}

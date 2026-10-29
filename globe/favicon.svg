@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="TapX AI">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#0b1220"/>
+      <stop offset="1" stop-color="#04060b"/>
+    </linearGradient>
+    <linearGradient id="chrome" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#ffffff"/>
+      <stop offset=".3" stop-color="#c9ecff"/>
+      <stop offset=".48" stop-color="#5f8aa8"/>
+      <stop offset=".62" stop-color="#eafaff"/>
+      <stop offset=".82" stop-color="#7fd7f3"/>
+      <stop offset="1" stop-color="#ffffff"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".5" cy=".45" r=".55">
+      <stop stop-color="#8be9ff" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#8be9ff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" rx="15" fill="url(#bg)"/>
+  <rect x="1" y="1" width="62" height="62" rx="14" fill="none" stroke="#8be9ff" stroke-opacity=".28"/>
+  <circle cx="32" cy="31" r="26" fill="url(#glow)" opacity=".5"/>
+  <path d="M18 18 46 46M46 18 18 46" fill="none" stroke="url(#chrome)" stroke-width="8.5" stroke-linecap="round"/>
+  <circle cx="51" cy="13" r="2.2" fill="#ffc46b"/>
+</svg>

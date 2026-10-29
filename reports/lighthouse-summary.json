@@ -1,0 +1,69 @@
+{
+  "performance": 1,
+  "accessibility": 1,
+  "best": 1,
+  "seo": 1,
+  "fcp": "1.1 s",
+  "lcp": "1.1 s",
+  "tbt": "90 ms",
+  "cls": "0",
+  "si": "1.7 s",
+  "total": "Total size was 553 KiB",
+  "resources": [
+    {
+      "resourceType": "total",
+      "label": "Total",
+      "requestCount": 23,
+      "transferSize": 566710
+    },
+    {
+      "resourceType": "image",
+      "label": "Image",
+      "requestCount": 9,
+      "transferSize": 344035
+    },
+    {
+      "resourceType": "font",
+      "label": "Font",
+      "requestCount": 3,
+      "transferSize": 136931
+    },
+    {
+      "resourceType": "other",
+      "label": "Other",
+      "requestCount": 3,
+      "transferSize": 34228
+    },
+    {
+      "resourceType": "script",
+      "label": "Script",
+      "requestCount": 6,
+      "transferSize": 23932
+    },
+    {
+      "resourceType": "stylesheet",
+      "label": "Stylesheet",
+      "requestCount": 1,
+      "transferSize": 18872
+    },
+    {
+      "resourceType": "document",
+      "label": "Document",
+      "requestCount": 1,
+      "transferSize": 8712
+    },
+    {
+      "resourceType": "media",
+      "label": "Media",
+      "requestCount": 0,
+      "transferSize": 0
+    },
+    {
+      "resourceType": "third-party",
+      "label": "Third-party",
+      "requestCount": 0,
+      "transferSize": 0
+    }
+  ],
+  "lcpNode": ""
+}

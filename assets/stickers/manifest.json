@@ -1,0 +1,22 @@
+{
+  "pack": "UtyaDuck",
+  "title": "Duck",
+  "source": "https://t.me/addstickers/UtyaDuck",
+  "export": "2026-10-26",
+  "note": "Alias — читаемое имя файла на сайте. sourceFile — исходный файл из экспорта пака. Рисунки принадлежат авторам пака UtyaDuck; перед публикацией подтвердить право показа.",
+  "stickers": [
+    { "alias": "chef", "sourceFile": "022_AgADCwEAAladvQo.tgs", "emoji": "🤯", "usage": ["Карточка: YouTube-превью"] },
+    { "alias": "cool", "sourceFile": "010_AgAD9wADVp29Cg.tgs", "emoji": "😎", "usage": ["Портрет в About", "Карточка: Orbital Globe", "Подвал"] },
+    { "alias": "detective", "sourceFile": "028_AgADSQIAAladvQo.tgs", "emoji": "🤫", "usage": ["About: блок «Сейчас»"] },
+    { "alias": "fire", "sourceFile": "014_AgADBQEAAladvQo.tgs", "emoji": "🔥", "usage": ["Hero: сцена X"] },
+    { "alias": "heart", "sourceFile": "002_AgADBAEAAladvQo.tgs", "emoji": "😘", "usage": ["Контакты: орб", "Подвал"] },
+    { "alias": "racing", "sourceFile": "030_AgADSgIAAladvQo.tgs", "emoji": "🥳", "usage": ["Карточка: LinkCut"] },
+    { "alias": "shock", "sourceFile": "004_AgAD_wADVp29Cg.tgs", "emoji": "😱", "usage": ["Карточка: Motion-графика"] },
+    { "alias": "sparkle", "sourceFile": "012_AgADBwEAAladvQo.tgs", "emoji": "🌈", "usage": ["Карточка: Emoji Bot Converter", "Подвал"] },
+    { "alias": "thumb", "sourceFile": "003_AgAD_gADVp29Cg.tgs", "emoji": "👍", "usage": ["Карточка: Каталог эмодзи", "Подвал"] },
+    { "alias": "typing", "sourceFile": "026_AgAD2gEAAladvQo.tgs", "emoji": "🦠", "usage": ["Карточка: AI-секретарь"] },
+    { "alias": "unacceptable", "sourceFile": "023_AgADDAEAAladvQo.tgs", "emoji": "👎", "usage": ["Карточка: Бот модерации"] },
+    { "alias": "water", "sourceFile": "040_AgADRh4AAvyUOEk.tgs", "emoji": "😭", "usage": ["Подвал"] },
+    { "alias": "wave", "sourceFile": "005_AgADAQEAAladvQo.tgs", "emoji": "👋", "usage": ["Подвал"] }
+  ]
+}

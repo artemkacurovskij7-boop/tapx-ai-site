@@ -1,0 +1,119 @@
+{
+  "passed": 28,
+  "failed": 0,
+  "fail": [],
+  "results": {
+    "cards=8": {
+      "ok": true,
+      "extra": "cards"
+    },
+    "project count 08": {
+      "ok": true,
+      "extra": ""
+    },
+    "globe card exists": {
+      "ok": true,
+      "extra": ""
+    },
+    "filter telegram >0": {
+      "ok": true,
+      "extra": ""
+    },
+    "filter telegram only telegram": {
+      "ok": true,
+      "extra": ""
+    },
+    "filter all=8": {
+      "ok": true,
+      "extra": ""
+    },
+    "dialog open": {
+      "ok": true,
+      "extra": ""
+    },
+    "case title": {
+      "ok": true,
+      "extra": ""
+    },
+    "case dates": {
+      "ok": true,
+      "extra": "Обновлено 29.10.2026 · Ссылка проверена 29.10.2026"
+    },
+    "case has demo link": {
+      "ok": true,
+      "extra": ""
+    },
+    "dialog closed": {
+      "ok": true,
+      "extra": ""
+    },
+    "deep link globe open": {
+      "ok": true,
+      "extra": ""
+    },
+    "globe case title": {
+      "ok": true,
+      "extra": ""
+    },
+    "globe demo href": {
+      "ok": true,
+      "extra": "globe/"
+    },
+    "next case cycles": {
+      "ok": true,
+      "extra": ""
+    },
+    "mobile no horizontal overflow": {
+      "ok": true,
+      "extra": "overflow=0"
+    },
+    "mobile filters horizontally scrollable": {
+      "ok": true,
+      "extra": ""
+    },
+    "dock visible": {
+      "ok": true,
+      "extra": ""
+    },
+    "min font 12 mobile": {
+      "ok": true,
+      "extra": "[]"
+    },
+    "motion-off class": {
+      "ok": true,
+      "extra": ""
+    },
+    "reduced no lottie": {
+      "ok": true,
+      "extra": ""
+    },
+    "reduced ticker static": {
+      "ok": true,
+      "extra": ""
+    },
+    "reduced no video": {
+      "ok": true,
+      "extra": ""
+    },
+    "no-js hero title": {
+      "ok": true,
+      "extra": ""
+    },
+    "no-js contacts": {
+      "ok": true,
+      "extra": ""
+    },
+    "no-js list": {
+      "ok": true,
+      "extra": ""
+    },
+    "404 status content": {
+      "ok": true,
+      "extra": ""
+    },
+    "404 links": {
+      "ok": true,
+      "extra": ""
+    }
+  }
+}

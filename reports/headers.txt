@@ -1,0 +1,41 @@
+=== / (CSP test server, gzip) ===
+HTTP/1.1 200 OK
+Content-Type: text/html; charset=utf-8
+Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-1DUTqHdJhXMQtesRXuUU4adp4HZNj2ckaFEInLkGrHA='; style-src 'self'; img-src 'self' data:; media-src 'self'; font-src 'self'; connect-src 'self'; manifest-src 'self'; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+X-Content-Type-Options: nosniff
+Referrer-Policy: strict-origin-when-cross-origin
+X-Frame-Options: DENY
+Permissions-Policy: camera=(), microphone=(), geolocation=()
+Cache-Control: no-store
+Date: Thu, 29 Oct 2026 22:18:59 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+
+=== /globe/ ===
+HTTP/1.1 200 OK
+Content-Type: text/html; charset=utf-8
+Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-1DUTqHdJhXMQtesRXuUU4adp4HZNj2ckaFEInLkGrHA='; style-src 'self'; img-src 'self' data:; media-src 'self'; font-src 'self'; connect-src 'self'; manifest-src 'self'; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+X-Content-Type-Options: nosniff
+Referrer-Policy: strict-origin-when-cross-origin
+X-Frame-Options: DENY
+Permissions-Policy: camera=(), microphone=(), geolocation=()
+Cache-Control: no-store
+Date: Thu, 29 Oct 2026 22:18:59 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+
+=== /assets/fonts/golos-text-var.woff2 ===
+HTTP/1.1 200 OK
+Content-Type: font/woff2
+Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-1DUTqHdJhXMQtesRXuUU4adp4HZNj2ckaFEInLkGrHA='; style-src 'self'; img-src 'self' data:; media-src 'self'; font-src 'self'; connect-src 'self'; manifest-src 'self'; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+X-Content-Type-Options: nosniff
+Referrer-Policy: strict-origin-when-cross-origin
+X-Frame-Options: DENY
+Permissions-Policy: camera=(), microphone=(), geolocation=()
+Cache-Control: no-store
+Date: Thu, 29 Oct 2026 22:18:59 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+

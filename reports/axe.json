@@ -1,0 +1,35 @@
+[
+  {
+    "name": "desktop",
+    "width": 1440,
+    "hash": null,
+    "violations": [],
+    "passes": 26,
+    "incomplete": [
+      "aria-prohibited-attr",
+      "color-contrast"
+    ]
+  },
+  {
+    "name": "desktop-case",
+    "width": 1440,
+    "hash": "#case-ai-secretary",
+    "violations": [],
+    "passes": 17,
+    "incomplete": [
+      "aria-prohibited-attr",
+      "color-contrast"
+    ]
+  },
+  {
+    "name": "mobile",
+    "width": 390,
+    "hash": null,
+    "violations": [],
+    "passes": 27,
+    "incomplete": [
+      "aria-prohibited-attr",
+      "color-contrast"
+    ]
+  }
+]

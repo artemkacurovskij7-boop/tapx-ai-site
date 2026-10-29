@@ -1,0 +1,15 @@
+{
+  "name": "TapX AI — Cosmic Digital Lab",
+  "short_name": "TapX AI",
+  "description": "Личная лаборатория Артёма: Telegram-боты, AI-ассистенты, сайты и Telegram Mini Apps.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#050807",
+  "theme_color": "#050807",
+  "lang": "ru",
+  "icons": [
+    { "src": "assets/img/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "assets/img/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}

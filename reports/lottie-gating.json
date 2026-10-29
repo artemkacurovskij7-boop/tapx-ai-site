@@ -1,0 +1,35 @@
+{
+  "before": {
+    "lottie": [],
+    "tgs": 0,
+    "live": 0,
+    "video": []
+  },
+  "after": {
+    "lottie": [],
+    "tgs": 0,
+    "live": 0,
+    "playing": 0,
+    "video": []
+  },
+  "fonts": {
+    "faces": [
+      {
+        "family": "Golos Text",
+        "status": "loaded"
+      },
+      {
+        "family": "Inter",
+        "status": "loaded"
+      },
+      {
+        "family": "JetBrains Mono",
+        "status": "loaded"
+      }
+    ],
+    "check900": true,
+    "checkInter": true,
+    "checkMono": true
+  },
+  "requests": []
+}

@@ -1,0 +1,34 @@
+{
+  "chromium": {
+    "info": {
+      "decompression": true,
+      "live": true,
+      "svg": true,
+      "liveOpacity": "1",
+      "stillOpacity": "0"
+    },
+    "logs": [
+      "Failed to load resource: the server responded with a status of 404 (File not found)"
+    ]
+  },
+  "firefox": {
+    "info": {
+      "decompression": true,
+      "live": true,
+      "svg": true,
+      "liveOpacity": "1",
+      "stillOpacity": "0"
+    },
+    "logs": []
+  },
+  "webkit": {
+    "info": {
+      "decompression": true,
+      "live": true,
+      "svg": true,
+      "liveOpacity": "1",
+      "stillOpacity": "0"
+    },
+    "logs": []
+  }
+}
