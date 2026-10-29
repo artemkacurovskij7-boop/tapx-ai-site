@@ -1,4 +1,6 @@
 # TapX AI — Cosmic Digital Lab (v2)
+**Репозиторий:** [artemkacurovskij7-boop/tapx-ai-site](https://github.com/artemkacurovskij7-boop/tapx-ai-site) · **Live preview:** [GitHub Pages](https://artemkacurovskij7-boop.github.io/tapx-ai-site/)
+
 
 Личный сайт-портфолио Артёма: Telegram-боты, AI-ассистенты, сайты, Mini Apps и эксперименты.
 Основной сайт — статический (HTML/CSS/JS), без сборки. Рядом лежит отдельный React-эксперимент **Orbital Globe** на Three.js.
@@ -144,6 +146,7 @@ npm run dev        # локальная разработка
 - Личные: https://t.me/TapX_AI_support
 - YouTube: https://www.youtube.com/@TapX_A
 - TikTok: https://www.tiktok.com/@tap_x_ai
+
 
 
 
